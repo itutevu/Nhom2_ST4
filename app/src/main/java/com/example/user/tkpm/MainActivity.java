@@ -158,7 +158,12 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
         initVideo();*/
 
 
+        if(getIntent().hasExtra("url")){
+            url=getIntent().getStringExtra("url");
 
+            key_id_video = extractVideoIdFromUrl(url);
+            initVideo();
+        }
     }
 
     @Override
@@ -375,6 +380,8 @@ public class MainActivity extends YouTubeBaseActivity implements YouTubePlayer.O
             //http://video.google.com/timedtext?lang=en&v=ziAA9tuLuiU
             xml = parser.getXmlFromUrl("https://www.youtube.com/api/timedtext?lang=en&v=" + key_id_video + "&tlang=en"); // getting XML from URL
             Document doc = parser.getDomElement(xml); // getting DOM element
+
+
 
             NodeList nl = doc.getElementsByTagName("transcript");
 
