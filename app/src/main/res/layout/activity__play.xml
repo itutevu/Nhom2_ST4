@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.tkpm.Activity_Play">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorMain">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_chevron_left" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp"
+                android:layout_toRightOf="@+id/img_back"
+                android:gravity="center"
+                android:text="Play Video"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/playerYoutube"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/tv_script"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorBlack" />
+</LinearLayout>

@@ -35,13 +35,16 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
     implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.google.code.gson:gson:2.8.2'
     implementation 'com.google.apis:google-api-services-youtube:v3-rev195-1.23.0'
     // https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-java6
     implementation group: 'com.google.oauth-client', name: 'google-oauth-client-java6', version: '1.11.0-beta'
     // https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-jetty
     implementation group: 'com.google.oauth-client', name: 'google-oauth-client-jetty', version: '1.11.0-beta'
-
+    implementation group: 'commons-io', name: 'commons-io', version: '2.4'
+    implementation 'com.google.code.gson:gson:2.8.4'
     //noinspection DuplicatePlatformClasses
     implementation 'org.json:json:20160810'
 }

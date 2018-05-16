@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_background_white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_notificaiton_grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Thông báo"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edt_url"
+        android:layout_marginTop="10dp"
+        android:hint="Url"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dongy"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_bg_btn_2"
+            android:text="đồng ý"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/btn_huybo"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_bg_btn_1"
+            android:text="hủy bỏ"
+            android:textColor="@color/colorMain" />
+    </LinearLayout>
+</LinearLayout>
